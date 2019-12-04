@@ -10,18 +10,18 @@ use App\Entity\Produit;
 class MainController extends AbstractController
 {
     /**
-     * @Route("/main", name="main")
+     * @Route("/", name="main")
      */
     public function index()
     {
-    /*         $toto = 'Ma variable toto';
+    $toto = 'Ma variable toto';
         return $this->render('main/index.html.twig', [
             'toto' => $toto,
-        ]); */
+        ]);
     }
 
     /**
-     * @Route("/", name="test")
+     * @Route("/test", name="test")
      */
     public function test(): Response
     {
