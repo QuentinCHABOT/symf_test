@@ -12,18 +12,7 @@ class MainController extends AbstractController
     /**
      * @Route("/", name="main")
      */
-    public function index()
-    {
-    $toto = 'Ma variable toto';
-        return $this->render('main/index.html.twig', [
-            'toto' => $toto,
-        ]);
-    }
-
-    /**
-     * @Route("/test", name="test")
-     */
-    public function test(): Response
+    public function index(): Response
     {
         $produit = new Produit();
         $produit->setlibelle('PC');
@@ -33,4 +22,25 @@ class MainController extends AbstractController
         $entityManager->flush();
         return new Response('Saved new product with id '.$produit->getId());
     }
+/*     public function index()
+    {
+    $toto = 'Ma variable toto';
+        return $this->render('main/index.html.twig', [
+            'toto' => $toto,
+        ]); */
+    }
+
+    /**
+     * @Route("/test", name="test")
+     */
+/*     public function test(): Response
+    {
+        $produit = new Produit();
+        $produit->setlibelle('PC');
+        $produit->setprix(1999);
+        $entityManager = $this->getDoctrine()->getManager();
+        $entityManager->persist($produit);
+        $entityManager->flush();
+        return new Response('Saved new product with id '.$produit->getId());
+    } */
 }
