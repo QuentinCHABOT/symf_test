@@ -27,8 +27,8 @@ class MainController extends AbstractController
     $toto = 'Ma variable toto';
         return $this->render('main/index.html.twig', [
             'toto' => $toto,
-        ]); */
-    }
+        ]); 
+    } */
 
     /**
      * @Route("/test", name="test")
