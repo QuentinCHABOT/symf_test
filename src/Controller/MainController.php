@@ -21,7 +21,8 @@ class MainController extends AbstractController
         $entityManager->persist($produit);
         $entityManager->flush();
         return new Response('Saved new product with id '.$produit->getId()); */
-        return new Response('Accueil');
+        // return new Response('Accueil');
+        return $this->redirectToRoute('produit_index');
     }
 /*     public function index()
     {
