@@ -14,14 +14,13 @@ class MainController extends AbstractController
      */
     public function index(): Response
     {
-/*         $produit = new Produit();
+        $produit = new Produit();
         $produit->setlibelle('PC');
         $produit->setprix(1999);
         $entityManager = $this->getDoctrine()->getManager();
         $entityManager->persist($produit);
         $entityManager->flush();
-        return new Response('Saved new product with id '.$produit->getId()); */
-        return new Response('OK');
+        return new Response('Saved new product with id ');
     }
 /*     public function index()
     {
