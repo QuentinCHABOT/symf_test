@@ -22,7 +22,7 @@ class MainController extends AbstractController
         $entityManager->flush();
         return new Response('Saved new product with id '.$produit->getId()); */
         // return new Response('Accueil');
-        return $this->redirectToRoute('produit_index');
+        return $this->redirectToRoute('app_login');
     }
 /*     public function index()
     {
